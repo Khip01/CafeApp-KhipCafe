@@ -1,0 +1,16 @@
+Login 
+
+Username : Khip01 //as Admin
+Password : admin
+
+Username : Aakhif2 //as cashier
+Password : kasir
+
+Username : Aakhif3 //as manager
+Password : manager
+
+Username : H4X0r
+Password : anon
+
+Username : Udin Pekerja Keras
+Password : udinGanteng123
