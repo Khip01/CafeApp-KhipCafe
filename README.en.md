@@ -16,7 +16,7 @@ Required Software:
 - Visual Studio 2019
 - SQL Server 18
 
-## Fitur
+## Feature
 Are you curious about this application? Here are some highlights of its look and features
 
 ![Application Feature!](README_images/CafeApp%20-%20KhipCafe.jpg)
