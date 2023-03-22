@@ -19,7 +19,7 @@ Perangkat Lunak yang dibutuhkan:
 ## Fitur
 Anda penasaran dengan aplikasi ini? Berikut adalah beberapa highlight dari tampilan dan fiturnya
 
-![Application Feature!](README_images/CafeApp - KhipCafe.jpg)
+![Application Feature!](README_images/CafeApp%20-%20KhipCafe.jpg)
 
 
 ## Instruksi Pemasangan:
