@@ -1,6 +1,6 @@
 # CafeApp - Khip's Cafe
 
-![](https://img.shields.io/badge/Type-Desktop%20App%2FAplikasi%20Desktop-purple)
+![](https://img.shields.io/badge/Type-Desktop%20App%2FAplikasi%20Desktop-purple) <img src="https://img.shields.io/badge/-Assignment-red" alt="Assignment">
 
 ## Hello👋
 
@@ -43,7 +43,7 @@ Jika tampilan gambar tidak ditemukan seperti gambar di bawah ini, jangan khawati
 
 > __Note__ 
 - Untuk Akun Login Pada aplikasi bisa dilihat di file `LoginUserAcc.txt`
-- Untuk melihat soal praktik yang terkait dengan aplikasi ini, silakan lihat di dalam folder **Soal**.
+- Untuk melihat tugas yang terkait dengan aplikasi ini, silakan lihat di dalam folder **Soal**.
 
 ---
 
@@ -52,7 +52,7 @@ Jika tampilan gambar tidak ditemukan seperti gambar di bawah ini, jangan khawati
 ![Database Diagram!]("test")
 
 
-## Translation For this README
+## Translation for this README
 - [English](./README.en.md)
 
 # Use
