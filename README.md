@@ -43,7 +43,7 @@ Jika tampilan gambar tidak ditemukan seperti gambar di bawah ini, jangan khawati
 
 > __Note__ 
 - Untuk Akun Login Pada aplikasi bisa dilihat di file `LoginUserAcc.txt`
-- Untuk melihat tugas yang terkait dengan aplikasi ini, silakan lihat di dalam folder **Soal**.
+- Untuk melihat tugas yang terkait dengan aplikasi ini, silakan lihat di dalam folder **Assignment**.
 
 ---
 
