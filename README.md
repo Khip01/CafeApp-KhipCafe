@@ -19,7 +19,7 @@ Perangkat Lunak yang dibutuhkan:
 ## Fitur
 Anda penasaran dengan aplikasi ini? Berikut adalah beberapa highlight dari tampilan dan fiturnya
 
-![Application Feature!]("https://raw.githubusercontent.com/Khip01/CafeApp-KhipCafe/main/README_images/CafeApp%20-%20KhipCafe.jpg")
+![Application Feature!]("README_images/CafeApp - KhipCafe.jpg")
 
 
 ## Instruksi Pemasangan:
@@ -36,7 +36,7 @@ Anda penasaran dengan aplikasi ini? Berikut adalah beberapa highlight dari tampi
 > __Warning__ \
 Jika tampilan gambar tidak ditemukan seperti gambar di bawah ini, jangan khawatir silahkan perbarui gambar menu di Akun Manager
 
-![MenuImage NotFound]("https://raw.githubusercontent.com/Khip01/CafeApp-KhipCafe/main/README_images/ImageNotFound.png")
+![MenuImage NotFound]("/README_images/ImageNotFound.png")
 
 
 ---
@@ -49,7 +49,7 @@ Jika tampilan gambar tidak ditemukan seperti gambar di bawah ini, jangan khawati
 
 ## Database Diagram
 
-![Database Diagram!]("https://raw.githubusercontent.com/Khip01/CafeApp-KhipCafe/main/README_images/DatabaseDiagram.png")
+![Database Diagram!]("README_images/DatabaseDiagram.png")
 
 
 ## Translation for this README
