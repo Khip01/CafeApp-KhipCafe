@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rtxtChangeLog.Text" xml:space="preserve">
+    <value>
+Changes Log (Latest) :
+
+// #v2.0.4.3 (13/02/2023)
+	- [Page CRUD Update User] (Feat Fix)
+		Mengubah button jika user yang diedit ONLINE button Delete enabled = False.
+
+	- [App] (Design Fix)
+		Mengubah tampilan Informasi menjadi warna biru (LightSkyBlue), diantaranya:
+		- Page CRUD Data User				] ADMIN
+		- Page CRUD Update User				] ADMIN
+		- Page CRUD Data Menu				] MANAGER
+		- Page CRUD Update Menu			] MANAGER
+		- Page Manage Table				] MANAGER
+		- Page Order Menu			               ] KASIR
+		- Page Catatan Transaksi Kasir		               ] KASIR
+
+// #v2.0.4.1 (12/03/2023)
+	- [Page CRUD Create New Menu] (Bug Fix)
+		Tidak bisa menyimpan gambar "Setelah Aplikasi Di Publish" 
+                              (Detail: System.IO.DirectoryNotFoundException: Could not find a part of the part of the path)
+
+	- [Page Order Meja] (Bug Fix)
+		Tampilan ComboBox sortir ID Order bukan lagi sesuai id_order saja, 
+                              tetapi sesuai date dan id_order.
+
+	- [Page Dashboard Kasir] (Bug Fix)
+		Fix tampilan path gambar jika tidak ditemukan di folder path user 
+                              (System.IO.FileNotFoundException:'imagePath')
+
+	- [Page Catatan Transaksi Manager] (Bug Fix)
+		Fix tampilan catatan transaksi bagian manager menyertakan sort by date
+
+	- [Page CRUD Update Menu] (Bug Fix)
+		Fix error ketika mengupdate menu yang dimana gambar sumber tidak ditemukan/tidak ada
+
+	- [Page CRUD Update Menu] (Bug Fix)
+		Fix jika tidak ada perubahan pada data
+
+	- [Page CRUD Update User] (Bug Fix)
+		Fix jika tidak ada perubahan pada data
+
+	- [Page Order Meja] (Bug Fix)
+		Fix jika tidak ada meja yang dihapus
+
+// #v2.0.3.3 (11/03/2023)
+	- [Page CRUD Data User] (Bug Fix)
+		Fix bug tampil data pada saat mode sortir pencarian
+
+	- [Page Catatan Transaksi Manager] (Bug Fix)
+		Error search box sort by Nama (Detail: Ambiguous col name "id_meja" and "added_by")
+
+	- [Show Change Log] (Add Feat)
+		Menambahkan Log Perubahan pada aplikasi
+
+	- [Page CRUD Update User] (Bug Fix)
+		Error truncated database value col 'no_telp' 13 digit
+
+//// #v2.0.3.1
+	- [Page CRUD Create New User] (Bug Fix, Add Feat)
+		Fix tampilan CRUD (Cek ada tampilan yang error) 
+		Membuat no telp 13 digit
+
+	- [Page Catatan Transaksi Manager] (Add Feat)
+		Bisa mencetak laporan transaksi (Transaksi dari tanggal berapa sampai tanggal berapa)
+		Sort By tanggal tertentu (Day/Month/Year/Custom)
+
+	- [Page Order Menu] (Add Feat)
+		Pada Create order, di section Cart kasir bisa memperbarui nominal/qty dari benda/menu
+
+
+// #v1.0.0.6
+	- [Page Order Menu] (Bug Fix)
+		Fix Design Payment
+
+	- [Page CRUD Create New Menu] (Bug Fix) 
+		Fix bug Error notification when price is not number
+
+//// #v1.0.0.0
+	- [Create App] (Add Feat)
+		App release
+</value>
+  </data>
+</root>

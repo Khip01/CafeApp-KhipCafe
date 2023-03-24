@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEA89E55-FDF3-4DDE-9126-D3BFFA8B9AEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>App_Cafe_UKK</RootNamespace>
+    <AssemblyName>App_Cafe_UKK</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\A AAKHIF ATHALLAH\Desktop\AppCafe UKK Latest Ver\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>2.0.4.3</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D9103A4307298C4A21C345BE448DDCA7E8567C31</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>App_Cafe_UKK_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1537.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormControlAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormControlAdmin.Designer.cs">
+      <DependentUpon>FormControlAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormControlKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormControlKasir.Designer.cs">
+      <DependentUpon>FormControlKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormControlManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormControlManager.Designer.cs">
+      <DependentUpon>FormControlManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCatatanTransaksiKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCatatanTransaksiKasir.Designer.cs">
+      <DependentUpon>PageCatatanTransaksiKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCatatanTransaksiManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCatatanTransaksiManager.Designer.cs">
+      <DependentUpon>PageCatatanTransaksiManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCRUDCreateNewMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCRUDCreateNewMenu.Designer.cs">
+      <DependentUpon>PageCRUDCreateNewMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCRUDCreateNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCRUDCreateNewUser.Designer.cs">
+      <DependentUpon>PageCRUDCreateNewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCRUDDataUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCRUDDataUser.Designer.cs">
+      <DependentUpon>PageCRUDDataUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCRUDUpdateMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCRUDUpdateMenu.Designer.cs">
+      <DependentUpon>PageCRUDUpdateMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCRUDUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCRUDUpdateUser.Designer.cs">
+      <DependentUpon>PageCRUDUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageDashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageDashboardAdmin.Designer.cs">
+      <DependentUpon>PageDashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageDashboardKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageDashboardKasir.Designer.cs">
+      <DependentUpon>PageDashboardKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageDashboardManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageDashboardManager.Designer.cs">
+      <DependentUpon>PageDashboardManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageCRUDDataMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageCRUDDataMenu.Designer.cs">
+      <DependentUpon>PageCRUDDataMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLogActivities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageLogActivities.Designer.cs">
+      <DependentUpon>PageLogActivities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageManageTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageManageTable.Designer.cs">
+      <DependentUpon>PageManageTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageOrderMeja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageOrderMeja.Designer.cs">
+      <DependentUpon>PageOrderMeja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageOrderMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PageOrderMenu.Designer.cs">
+      <DependentUpon>PageOrderMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResiDataSet.cs">
+      <DependentUpon>ResiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ResiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShowChangeLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowChangeLog.Designer.cs">
+      <DependentUpon>ShowChangeLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowImage.Designer.cs">
+      <DependentUpon>ShowImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPrint.Designer.cs">
+      <DependentUpon>ShowPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPrintCatatanTransaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPrintCatatanTransaksi.Designer.cs">
+      <DependentUpon>ShowPrintCatatanTransaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="FormControlAdmin.resx">
+      <DependentUpon>FormControlAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControlKasir.resx">
+      <DependentUpon>FormControlKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControlManager.resx">
+      <DependentUpon>FormControlManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageCatatanTransaksiKasir.resx">
+      <DependentUpon>PageCatatanTransaksiKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageCatatanTransaksiManager.resx">
+      <DependentUpon>PageCatatanTransaksiManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageCRUDCreateNewMenu.resx">
+      <DependentUpon>PageCRUDCreateNewMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageCRUDCreateNewUser.resx">
+      <DependentUpon>PageCRUDCreateNewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageCRUDDataMenu.resx">
+      <DependentUpon>PageCRUDDataMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageCRUDDataUser.resx">
+      <DependentUpon>PageCRUDDataUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageCRUDUpdateMenu.resx">
+      <DependentUpon>PageCRUDUpdateMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageCRUDUpdateUser.resx">
+      <DependentUpon>PageCRUDUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageDashboardAdmin.resx">
+      <DependentUpon>PageDashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageDashboardKasir.resx">
+      <DependentUpon>PageDashboardKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageDashboardManager.resx">
+      <DependentUpon>PageDashboardManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLogActivities.resx">
+      <DependentUpon>PageLogActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageManageTable.resx">
+      <DependentUpon>PageManageTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageOrderMeja.resx">
+      <DependentUpon>PageOrderMeja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageOrderMenu.resx">
+      <DependentUpon>PageOrderMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportCatatanTransaksi.rdlc" />
+    <EmbeddedResource Include="ReportResiKasir.rdlc" />
+    <EmbeddedResource Include="ShowChangeLog.resx">
+      <DependentUpon>ShowChangeLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowImage.resx">
+      <DependentUpon>ShowImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPrint.resx">
+      <DependentUpon>ShowPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPrintCatatanTransaksi.resx">
+      <DependentUpon>ShowPrintCatatanTransaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App_Cafe_UKK_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResiDataSet.xsc">
+      <DependentUpon>ResiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ResiDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ResiDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ResiDataSet.xss">
+      <DependentUpon>ResiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\EyeHide24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Khip_s_Cafe_Down_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EyeOpen24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\askQuestion24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Khip_s_Cafe_Side_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuDotsVertical24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DashboardLayout24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CRUDicon24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogActivities24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Index24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userSimplewhite60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AllUsersDataFigJam3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateUserDataFigJam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateAndDeleteFigJam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuBarsVertical24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kasir512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manajer512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\important24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdminOFF50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdminON50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KasirOFF50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KasirON50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManagerOFF50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManagerON50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sistem50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orderTable24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catatanTransaksi24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1Icon350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2Icon350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3Icon350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4Icon350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userSimpleWhite24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noImage100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadingRhombusGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noImage24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

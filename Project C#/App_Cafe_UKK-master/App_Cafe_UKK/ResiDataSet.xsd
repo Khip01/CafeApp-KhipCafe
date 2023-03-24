@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ResiDataSet" targetNamespace="http://tempuri.org/ResiDataSet.xsd" xmlns:mstns="http://tempuri.org/ResiDataSet.xsd" xmlns="http://tempuri.org/ResiDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="db_Cafe_UKKConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="db_Cafe_UKKConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.App_Cafe_UKK.Properties.Settings.GlobalReference.Default.db_Cafe_UKKConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dataTableResiTableAdapter" GeneratorDataComponentClassName="dataTableResiTableAdapter" Name="dataTableResi" UserDataComponentName="dataTableResiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_Cafe_UKKConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT tblOrder.id_order, tblKaryawan.username, tblMenu.nama_menu, tblOrder.qty, tblOrder.harga, tblOrder.total, tblOrder.uang_diberi, tblOrder.date
+FROM     tblOrder INNER JOIN
+                  tblMenu ON tblOrder.id_menu = tblMenu.id_menu INNER JOIN
+                  tblKaryawan ON tblOrder.added_by = tblKaryawan.id_karyawan</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_order" DataSetColumn="id_order" />
+              <Mapping SourceColumn="username" DataSetColumn="username" />
+              <Mapping SourceColumn="nama_menu" DataSetColumn="nama_menu" />
+              <Mapping SourceColumn="qty" DataSetColumn="qty" />
+              <Mapping SourceColumn="harga" DataSetColumn="harga" />
+              <Mapping SourceColumn="total" DataSetColumn="total" />
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="uang_diberi" DataSetColumn="uang_diberi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dataTableCatatanTransaksiTableAdapter" GeneratorDataComponentClassName="dataTableCatatanTransaksiTableAdapter" Name="dataTableCatatanTransaksi" UserDataComponentName="dataTableCatatanTransaksiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_Cafe_UKKConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT tblOrder.id_order, tblOrder.id_menu, tblOrder.qty, tblOrder.harga, tblOrder.total, tblOrder.uang_diberi, tblOrder.date, tblMeja.no_meja, tblKaryawan.username AS added_by
+FROM     tblOrder INNER JOIN
+                  tblKaryawan ON tblOrder.added_by = tblKaryawan.id_karyawan INNER JOIN
+                  tblMeja ON tblOrder.id_meja = tblMeja.id_meja</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_order" DataSetColumn="id_order" />
+              <Mapping SourceColumn="id_menu" DataSetColumn="id_menu" />
+              <Mapping SourceColumn="qty" DataSetColumn="qty" />
+              <Mapping SourceColumn="harga" DataSetColumn="harga" />
+              <Mapping SourceColumn="total" DataSetColumn="total" />
+              <Mapping SourceColumn="uang_diberi" DataSetColumn="uang_diberi" />
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="no_meja" DataSetColumn="no_meja" />
+              <Mapping SourceColumn="added_by" DataSetColumn="added_by" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ResiDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ResiDataSet" msprop:Generator_UserDSName="ResiDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dataTableResi" msprop:Generator_TableClassName="dataTableResiDataTable" msprop:Generator_TableVarName="tabledataTableResi" msprop:Generator_RowChangedName="dataTableResiRowChanged" msprop:Generator_TablePropName="dataTableResi" msprop:Generator_RowDeletingName="dataTableResiRowDeleting" msprop:Generator_RowChangingName="dataTableResiRowChanging" msprop:Generator_RowEvHandlerName="dataTableResiRowChangeEventHandler" msprop:Generator_RowDeletedName="dataTableResiRowDeleted" msprop:Generator_RowClassName="dataTableResiRow" msprop:Generator_UserTableName="dataTableResi" msprop:Generator_RowEvArgName="dataTableResiRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_order" msprop:Generator_ColumnVarNameInTable="columnid_order" msprop:Generator_ColumnPropNameInRow="id_order" msprop:Generator_ColumnPropNameInTable="id_orderColumn" msprop:Generator_UserColumnName="id_order">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="username" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_UserColumnName="username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nama_menu" msprop:Generator_ColumnVarNameInTable="columnnama_menu" msprop:Generator_ColumnPropNameInRow="nama_menu" msprop:Generator_ColumnPropNameInTable="nama_menuColumn" msprop:Generator_UserColumnName="nama_menu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:int" />
+              <xs:element name="harga" msprop:Generator_ColumnVarNameInTable="columnharga" msprop:Generator_ColumnPropNameInRow="harga" msprop:Generator_ColumnPropNameInTable="hargaColumn" msprop:Generator_UserColumnName="harga" type="xs:int" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:int" />
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" type="xs:dateTime" />
+              <xs:element name="uang_diberi" msprop:Generator_ColumnVarNameInTable="columnuang_diberi" msprop:Generator_ColumnPropNameInRow="uang_diberi" msprop:Generator_ColumnPropNameInTable="uang_diberiColumn" msprop:Generator_UserColumnName="uang_diberi" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dataTableCatatanTransaksi" msprop:Generator_TableClassName="dataTableCatatanTransaksiDataTable" msprop:Generator_TableVarName="tabledataTableCatatanTransaksi" msprop:Generator_TablePropName="dataTableCatatanTransaksi" msprop:Generator_RowDeletingName="dataTableCatatanTransaksiRowDeleting" msprop:Generator_RowChangingName="dataTableCatatanTransaksiRowChanging" msprop:Generator_RowEvHandlerName="dataTableCatatanTransaksiRowChangeEventHandler" msprop:Generator_RowDeletedName="dataTableCatatanTransaksiRowDeleted" msprop:Generator_UserTableName="dataTableCatatanTransaksi" msprop:Generator_RowChangedName="dataTableCatatanTransaksiRowChanged" msprop:Generator_RowEvArgName="dataTableCatatanTransaksiRowChangeEvent" msprop:Generator_RowClassName="dataTableCatatanTransaksiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_order" msprop:Generator_ColumnVarNameInTable="columnid_order" msprop:Generator_ColumnPropNameInRow="id_order" msprop:Generator_ColumnPropNameInTable="id_orderColumn" msprop:Generator_UserColumnName="id_order">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_menu" msprop:Generator_ColumnVarNameInTable="columnid_menu" msprop:Generator_ColumnPropNameInRow="id_menu" msprop:Generator_ColumnPropNameInTable="id_menuColumn" msprop:Generator_UserColumnName="id_menu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="qty" msprop:Generator_ColumnVarNameInTable="columnqty" msprop:Generator_ColumnPropNameInRow="qty" msprop:Generator_ColumnPropNameInTable="qtyColumn" msprop:Generator_UserColumnName="qty" type="xs:int" />
+              <xs:element name="harga" msprop:Generator_ColumnVarNameInTable="columnharga" msprop:Generator_ColumnPropNameInRow="harga" msprop:Generator_ColumnPropNameInTable="hargaColumn" msprop:Generator_UserColumnName="harga" type="xs:int" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:int" />
+              <xs:element name="uang_diberi" msprop:Generator_ColumnVarNameInTable="columnuang_diberi" msprop:Generator_ColumnPropNameInRow="uang_diberi" msprop:Generator_ColumnPropNameInTable="uang_diberiColumn" msprop:Generator_UserColumnName="uang_diberi" type="xs:int" />
+              <xs:element name="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_UserColumnName="date" type="xs:dateTime" />
+              <xs:element name="no_meja" msprop:Generator_ColumnVarNameInTable="columnno_meja" msprop:Generator_ColumnPropNameInRow="no_meja" msprop:Generator_ColumnPropNameInTable="no_mejaColumn" msprop:Generator_UserColumnName="no_meja">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="added_by" msprop:Generator_ColumnVarNameInTable="columnadded_by" msprop:Generator_ColumnPropNameInRow="added_by" msprop:Generator_ColumnPropNameInTable="added_byColumn" msprop:Generator_UserColumnName="added_by">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
