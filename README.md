@@ -56,4 +56,4 @@ Jika tampilan gambar tidak ditemukan seperti gambar di bawah ini, jangan khawati
 - [English](./README.en.md)
 
 # Use
-[![My Skills](https://skillicons.dev/icons?i=cs)](https://github.com/Khip01)
+[![My Skills](https://skillicons.dev/icons?i=cs,visualstudio)](https://github.com/Khip01)
