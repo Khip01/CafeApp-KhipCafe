@@ -99,7 +99,13 @@ namespace App_Cafe_UKK
                     string hashedPassword = BCrypt.Net.BCrypt.HashPassword(password, salt); //hash password with salt
 
                     // Sesi menyimpan data ke database tblKaryawan
-                    util.cmd = new SqlCommand("INSERT INTO tblKaryawan (id_karyawan, username, posisi, password, status, date_added) VALUES ('" + id + "', '" + txtUsernameSignUp.Text + "', '" + cbPosisi.Text + "', '" + hashedPassword + "', 'OFFLINE', '"+DateTime.Now+"')", util.koneksi);
+                    util.cmd = new SqlCommand("INSERT INTO tblKaryawan (id_karyawan, username, posisi, password, status, date_added) VALUES (@idKaryawan, @username, @posisi, @password, @status, @dateAdded)", util.koneksi);
+                    util.cmd.Parameters.AddWithValue("idKaryawan", id);
+                    util.cmd.Parameters.AddWithValue("username", txtUsernameSignUp.Text);
+                    util.cmd.Parameters.AddWithValue("posisi", cbPosisi.Text);
+                    util.cmd.Parameters.AddWithValue("password", hashedPassword);
+                    util.cmd.Parameters.AddWithValue("status", "OFFLINE");
+                    util.cmd.Parameters.AddWithValue("dateAdded", DateTime.Now);
                     util.cmd.ExecuteNonQuery();
 
                     // Sesi menyimpan salt ke database tblSaltIsSecret
