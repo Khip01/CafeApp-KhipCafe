@@ -33,7 +33,7 @@ Anda penasaran dengan aplikasi ini? Berikut adalah beberapa highlight dari tampi
 
 ---
 
-> __Warning__ \
+> [!WARNING]
 Jika tampilan gambar tidak ditemukan seperti gambar di bawah ini, jangan khawatir silahkan perbarui gambar menu di Akun Manager
 
 ![MenuImage NotFound](/README_images/ImageNotFound.png)
@@ -41,9 +41,9 @@ Jika tampilan gambar tidak ditemukan seperti gambar di bawah ini, jangan khawati
 
 ---
 
-> __Note__ 
-- Untuk Akun Login Pada aplikasi bisa dilihat di file `LoginUserAcc.txt`
-- Untuk melihat tugas yang terkait dengan aplikasi ini, silakan lihat di dalam folder **Assignment**.
+> [!NOTE]
+> - Untuk Akun Login Pada aplikasi bisa dilihat di file `LoginUserAcc.txt`
+> - Untuk melihat tugas yang terkait dengan aplikasi ini, silakan lihat di dalam folder **Assignment**.
 
 ---
 
